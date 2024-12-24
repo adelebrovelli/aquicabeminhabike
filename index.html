@@ -4,30 +4,98 @@
         <title>aqui cabe minha bike?</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
            * {
             box-sizing: border-box;
         }
          body {
             height: 100vh;
             margin: 0;
-            margin-top: 100px;
+            margin-top: 5.208vw;
             background-color: #F9ECD9;
         }
+        .titulos{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+        }
          .logo-index{
-            width: 145px;
-            height: 228px;
-            margin-left: 4em;
+            max-width: 7.552vw;
+            height: auto;
+            margin-left: 3.385vw;
         }
 
-        .nav-ciclo{
-            margin-top: 50px;
+        .texto-index{
+            margin-right: 3.385vw;
+            max-width: 20.052vw;
+            height: auto;
         }
+
+        .nav-ciclo {
+               margin-top: 50px;
+               position: relative; 
+               width: 100%; 
+           }
+           .nav-ciclo img {
+               width: 100%;
+               height: auto;
+           }
+
+        .buttons {
+               display: flex;
+               gap: 0.25vw;
+               position: absolute;
+               bottom: 4.1vw; 
+               right: 2vw;
+           }
+
+        .button {
+               padding: 1vw 2vw;
+               width: 12.344vw;
+               height: 5.677vw;
+               border-radius: 1vw 1vw 0px 0px;
+               font-family: Arial, Helvetica, "Afacad", sans-serif;
+               line-height: 1.9vw;
+               font-size: 1.5vw;
+               text-align: center;
+               cursor: pointer;
+               text-decoration: none;
+               border: none;
+               display: flex;
+               align-items: center; 
+               justify-content: center; 
+               text-align: center;
+           }
+           .button-laranja {
+               background-color: #FECA8A;
+               color: #F98392;
+           }
+           .button-rosa {
+               background-color: #F98392;
+               color: #FECA8A;
+           }
+           .button-rosa:hover {
+               background-color: #F7748B;     
+           }
+           .button-laranja:hover {
+            background-color: #FCD09F;
+           }
         </style>
     </head>
     <body>
-        <img src="LOGO-index.svg" class="logo-index" alt="logo aqui cabe minha bike"/>
-        <nav>
-            <img src="NAV-ciclofaixa.svg" class="nav-ciclo" alt="ciclofaixa e navbar"/>
-        </nav>
+        <header>
+            <div class="titulos">
+            <img src="LOGO-index.svg" class="logo-index" alt="logo aqui cabe minha bike"/>
+            <img src="guia-texto.svg" class="texto-index" alt="guia de estabelecimentos com bicicletários em Recife"/>
+           </div>
+            <nav class="nav-ciclo">
+                <img src="NAV-ciclofaixa.svg" alt="ciclofaixa e navbar"/>
+                <div class="buttons">
+                    <a href="#mapa-paraciclos" class="button button-laranja"><strong>mapa de <br> paraciclos</strong></a>
+                    <a href="#solicite-paraciclo" class="button button-rosa"><strong>solicite um <br> paraciclo</strong></a>
+                </div>
+            </nav>
+        </header>
     </body>
 </html>
