@@ -11,7 +11,7 @@
                 const data = await response.json();
 
                 data.forEach((item) => {
-        const columnId = item.regiao.replace(/\s+/g, "").toLowerCase(); // Ex.: "zona sul" -> "zonasul"
+        const columnId = item.regiao.replace(/\s+/g, "").toLowerCase(); 
         const column = document.getElementById(columnId);
 
         if (column && item.lugares.length > 0) {
@@ -22,15 +22,16 @@
                 itemElement.classList.add("locations-item");
 
                 itemElement.innerHTML = `
+                <div class="item-header">
                 <label class="container">
-  <input type="checkbox" checked="checked">
-    <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg>
-    <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg>
+  <input type="checkbox">
+    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg>
     </label>
                     <p class="item-title">${lugar.nome}</p>
-                    <div class="item-details" style="display: none;">
+                    </div>
+                    <div class="item-details">
                         <small>${lugar.descricao}</small><br>
-                        <em><small>${lugar.endereço}<small></em>
+                        <a href="${lugar.link}" target="_blank" rel="noopener noreferrer"><strong><em><small>${lugar.endereço}<small></em></strong></a>
                     </div>
                 `;
 
@@ -38,17 +39,22 @@
                 const details = itemElement.querySelector(".item-details");
 
                 const checkbox = itemElement.querySelector("input[type='checkbox']");
-                arrow.addEventListener("click", (event) => {
-                event.preventDefault(); 
-                const checkbox = arrow.querySelector("input[type='checkbox']");
-                checkbox.checked = !checkbox.checked; 
+                arrow.addEventListener("click", toggleDetails);
+                itemElement.querySelector(".item-title").addEventListener("click", toggleDetails);
 
-                if (checkbox.checked) {
-                    details.style.display = "block";
-                } else {
-                    details.style.display = "none";
-                }
-            });
+        function toggleDetails(event) {
+            event.preventDefault(); 
+            const isChecked = checkbox.checked;
+
+            if (isChecked) {
+                details.style.display = "none"; 
+                checkbox.checked = false;
+            } else {
+                details.style.display = "block"; 
+                checkbox.checked = true;
+            }
+        }
+
 
                 column.appendChild(itemElement);
             });
@@ -58,10 +64,11 @@
 loadGrid();
         </script>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Funnel+Display:wght@300..800&display=swap');
            * {
             box-sizing: border-box;
         }
+        
          body {
             height: 100vh;
             margin: 0;
@@ -109,7 +116,8 @@ loadGrid();
                width: 12.344vw;
                height: 5.677vw;
                border-radius: 1vw 1vw 0px 0px;
-               font-family: Arial, Helvetica, "Afacad", sans-serif;
+               font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
+               font-weight: 450;
                line-height: 1.7vw;
                font-size: 1.35vw;
                text-align: center;
@@ -141,112 +149,110 @@ loadGrid();
             padding: 2vw;
         }
         .locations-column{
+            margin-top: 7vw;
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 1vw;
             border: 4px solid #FECA8A;
             border-radius: 13px 13px 0px 0px;
-            font-family: Arial, Helvetica, "Afacad", sans-serif;
+            font-family: "Funnel Display", "Afacad", Arial, Helvetica, sans-serif;
             color: #F7748B
         
         }
         .locations-item1 {
             background-color: #FECA8A;
+            font-size: 1.5vw;
             padding: 1vw;
             transition: transform 0.2s, background-color 0.2s;
             text-align: center;
         }
         .locations-item {
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
             background-color: none;
-            margin-top: -0.9vw;
-            margin-right: 7vw ;
-            padding: 1vw;
+            margin-top: -1vw;
+            padding: 2vw;
             cursor: pointer;
-            transition: transform 0.2s, background-color 0.2s;
+            border-top: 3px solid #FECA8A;
+            border-color: #FECA8A;
+        }
+
+        .item-header {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
         }
         .item-title {
-         cursor: pointer;
-         font-weight: bold;
-         color: #F98392;
-         transition: color 0.1s ease;
+            font-weight: bold;
+            color: #F98392;
+            cursor: pointer;
+            margin: 0;
+        }
+        .item-title:hover {
+            color: #F7748B;
         }
 
-.item-title:hover {
-    color: #F7748B; 
-}
+        .item-details {
+            display: none;
+            font-size: 1.1em;
+            color: #F98392;
+            margin-top: 0.5em;
+            padding: 0.5em;
+            cursor:auto;
+        }
 
-.item-details {
-    font-size: 0.9em;
-    color: #333;
-    margin-top: 0.5em;
-    padding: 0.5em;
-    background-color: #FEF7E5;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
 
-.container {
-  --color: #F98392;
-  --size: 1.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  font-size: var(--size);
-  user-select: none;
-  fill: var(--color);
-}
+        .container {
+        --color: #F98392;
+        --size: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        font-size: var(--size);
+        user-select: none;
+        fill: var(--color);
+        position: relative;
+                    width: 2vw; 
+                    height: 2vw; 
+        }
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        .container input:checked ~ .chevron {
+            transform: rotate(90deg);
+        }
+        .container input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
 
-.container .chevron-right {
-  position: absolute;
-  animation: keyframes-return .5s;
-}
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:3vw;
+            height: 15vh;
+            width: 100%;
+            font-family: "Afacad", sans-serif;
+            color: #F9ECD9;
+            background-color: #F98392;
+        }
 
-.container .chevron-down {
-  position: absolute;
-  display: none;
-  animation: keyframes-fill .5s;
-}
+        a {
+        color: inherit; 
+        text-decoration: none; 
+        }
 
-.container input:checked ~ .chevron-right {
-  display: none;
-}
+        .locations-column a:hover {
+            text-decoration: underline;
+        }
 
-.container input:checked ~ .chevron-down {
-  display: block;
-}
-
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-@keyframes keyframes-fill {
-  0% {
-    transform: rotate(-90deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes keyframes-return {
-  0% {
-    transform: rotate(90deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-}
 
     </style>
     </head>
@@ -259,12 +265,11 @@ loadGrid();
             <nav class="nav-ciclo">
                 <img src="NAV-ciclofaixa.svg" alt="ciclofaixa e navbar"/>
                 <div class="buttons">
-                    <a href="#mapa-paraciclos" class="button button-laranja"><strong>mapa de <br> paraciclos</strong></a>
-                    <a href="#solicite-paraciclo" class="button button-rosa"><strong>solicite um <br> paraciclo</strong></a>
+                    <a href="#mapa-paraciclos" class="button button-laranja">mapa de <br> paraciclos</a>
+                    <a href="#solicite-paraciclo" class="button button-rosa">solicite um <br> paraciclo</a>
                 </div>
             </nav>
         </header>
-
         <div class="locations-grid" id="grid">
             <article class="locations-column" id="zonasul">
                 <section class="locations-item1">
@@ -287,6 +292,6 @@ loadGrid();
                 </section>
             </article>
         </div>
+        <footer><p>rodapé rodapé rodapé</p></footer>
     </body>
-    <footer></footer>
 </html>
