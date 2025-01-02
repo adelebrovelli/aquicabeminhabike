@@ -2,13 +2,15 @@
     {
         "regiao": "zona sul",
         "lugares": [
-            { "nome": "Shopping Recife", "descricao": "Próximo a entrada principal, o bicicletário é descoberto mas com controle de acesso por ticket e uma cabine de vigilância.", "endereço": "Rua Padre Carapuceiro, 777", "link": "https://maps.app.goo.gl/18aU4eoGBLwzAEbh8" }
+            { "nome": "Shopping Recife", "descricao": "Próximo a entrada principal, o bicicletário é descoberto mas com controle de acesso por ticket e uma cabine de vigilância.", "endereço": "Rua Padre Carapuceiro, 777", "link": "https://maps.app.goo.gl/18aU4eoGBLwzAEbh8" },
+            { "nome": "Além do Pão - Setúbal", "descricao": "Logo na entrada, eles possuem um bicicletário descoberto.", "endereço": "R. Prof. Augusto Lins e Silva, 211", "link": "https://maps.app.goo.gl/YjbGj2zHER3MuD5M6" }
         ]
     },
     {
         "regiao": "centro",
         "lugares": [
-            { "nome": "UNICAP", "descricao": "Bicicletário grande descoberto próximo ao bloco D.", "endereço": "Rua do Príncipe, 526", "link": "https://maps.app.goo.gl/d81m5nWksYfBZwtL6"}
+            { "nome": "UNICAP", "descricao": "Bicicletário grande descoberto próximo ao bloco D.", "endereço": "Rua do Príncipe, 526", "link": "https://maps.app.goo.gl/d81m5nWksYfBZwtL6"},
+            { "nome": "Casa Buliçosa", "descricao": "Na frente possui um bicicletário descoberto.", "endereço": "Rua Capitão Lima, 269", "link": "https://maps.app.goo.gl/9PUn6A9QeWQMnBwSA"}
         ]
     },
     {
