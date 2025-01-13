@@ -10,14 +10,16 @@
         "regiao": "centro",
         "lugares": [
             { "nome": "UNICAP", "descricao": "Bicicletário grande descoberto próximo ao bloco D.", "endereço": "Rua do Príncipe, 526", "link": "https://maps.app.goo.gl/d81m5nWksYfBZwtL6"},
-            { "nome": "Casa Buliçosa", "descricao": "Na frente possui um bicicletário descoberto.", "endereço": "Rua Capitão Lima, 269", "link": "https://maps.app.goo.gl/9PUn6A9QeWQMnBwSA"}
+            { "nome": "Casa Buliçosa", "descricao": "Na frente possui um bicicletário descoberto.", "endereço": "Rua Capitão Lima, 269", "link": "https://maps.app.goo.gl/9PUn6A9QeWQMnBwSA"},
+            { "nome": "Fundação Joaquim Nabuco - Derby", "descricao": "É onde fica a sala Derby do Cinema da Fundação. Há um bicicletário descoberto em seu entorno.", "endereço": "R. Henrique Dias, 609", "link": "https://maps.app.goo.gl/jKcCgRfcA8atYQJT9"}
         ]
     },
     {
         "regiao": "zona norte",
         "lugares": [
             { "nome": "Shopping Plaza", "descricao": "Bicicletário coberto com 60 vagas para bike no edifício garagem, piso E1.", "endereço": "Rua Dr. João Santos Filho, 255", "link": "https://maps.app.goo.gl/r8Xby7AFvP8BMcWK6" },
-            { "nome": "Shopping ETC", "descricao": "Possui bicicletário coberto dentro do estacionamento.", "endereço": "Av. Rosa e Silva, 1460", "link": "https://maps.app.goo.gl/PFkiCFxNArJcxF4a9" }
+            { "nome": "Shopping ETC", "descricao": "Possui bicicletário coberto dentro do estacionamento.", "endereço": "Av. Rosa e Silva, 1460", "link": "https://maps.app.goo.gl/PFkiCFxNArJcxF4a9" },
+            { "nome": "Museu do Homem do Nordeste/Fundação Joaquim Nabuco", "descricao": "É onde fica a sala Derby do Cinema da Fundação. Há um bicicletário descoberto em seu entorno.", "endereço": "R. Henrique Dias, 609", "link": "https://maps.app.goo.gl/jKcCgRfcA8atYQJT9"}
         ]
     },
     {
