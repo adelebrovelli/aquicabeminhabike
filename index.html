@@ -81,6 +81,7 @@ loadGrid();
             align-items: flex-start;
         }
         
+        
          .logo-index{
             max-width: 7.552vw;
             height: auto;
@@ -258,6 +259,13 @@ loadGrid();
         text-decoration: none; 
         }
 
+        .titulos a {
+            display: inline-block;
+            cursor: pointer;
+            width: auto;
+            height: auto;
+        }
+
         .locations-column a:hover {
             text-decoration: underline;
         }
@@ -266,16 +274,18 @@ loadGrid();
     </style>
     </head>
     <body>
-        <header>
-            <div class="titulos">
-            <a href="index.html"><img src="LOGO-index.svg" class="logo-index" alt="logo aqui cabe minha bike"/></a>
-            <img src="guia-texto.svg" class="texto-index" alt="guia de estabelecimentos com bicicletários em Recife"/>
-           </div>
+        <header>   
+            <div class="titulos"> 
+            <a href="index.html">
+            <img src="LOGO-index.svg" class="logo-index" style="width: 100%;" alt="logo aqui cabe minha bike"/>
+            </a>
+            <a href="index.html"> <img src="guia-texto.svg" class="texto-index" style="width: 100%;" alt="guia de estabelecimentos com bicicletários em Recife"/></a>
+            </div>
             <nav class="nav-ciclo">
                 <img src="NAV-ciclofaixa.svg" alt="ciclofaixa e navbar"/>
                 <div class="buttons">
                     <a href="mapaParaciclos.html" class="button button-laranja">mapa de <br> paraciclos</a>
-                    <a href="#solicite-paraciclo" class="button button-rosa">solicite um <br> paraciclo</a>
+                    <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
                 </div>
             </nav>
         </header>
@@ -302,7 +312,7 @@ loadGrid();
             </article>
         </div>
         <footer>
-            <p>colabore com o guia: envie um estabelecimento para mim <a href="" target="_blank" rel="noopener noreferrer">aqui</a></p>
+            <p>colabore com o guia: envie um estabelecimento <a href="mailto:adele.00000844516@unicap.br" target="_blank" rel="noopener noreferrer">aqui</a></p>
             <p>desenvolvido por <a href="https://www.linkedin.com/in/adelebrovelli/" target="_blank" rel="noopener noreferrer">Adele Brovelli</a> </p>
         </footer>
     </body>

@@ -2,7 +2,7 @@
     {
         "regiao": "zona sul",
         "lugares": [
-            { "nome": "Shopping Recife", "descricao": "Próximo a entrada principal, o bicicletário é descoberto mas com controle de acesso por ticket e uma cabine de vigilância.", "endereço": "Rua Padre Carapuceiro, 777", "link": "https://maps.app.goo.gl/18aU4eoGBLwzAEbh8" },
+            { "nome": "Shopping Recife", "descricao": "Próximo a entrada principal, o bicicletário é coberto e encontra-se na área F do estacionamento.", "endereço": "Rua Padre Carapuceiro, 777", "link": "https://maps.app.goo.gl/18aU4eoGBLwzAEbh8" },
             { "nome": "Além do Pão - Setúbal", "descricao": "Logo na entrada, eles possuem um bicicletário descoberto.", "endereço": "R. Prof. Augusto Lins e Silva, 211", "link": "https://maps.app.goo.gl/YjbGj2zHER3MuD5M6" }
         ]
     },
@@ -19,7 +19,7 @@
         "lugares": [
             { "nome": "Shopping Plaza", "descricao": "Bicicletário coberto com 60 vagas para bike no edifício garagem, piso E1.", "endereço": "Rua Dr. João Santos Filho, 255", "link": "https://maps.app.goo.gl/r8Xby7AFvP8BMcWK6" },
             { "nome": "Shopping ETC", "descricao": "Possui bicicletário coberto dentro do estacionamento.", "endereço": "Av. Rosa e Silva, 1460", "link": "https://maps.app.goo.gl/PFkiCFxNArJcxF4a9" },
-            { "nome": "Museu do Homem do Nordeste/Fundação Joaquim Nabuco", "descricao": "É onde fica a sala Derby do Cinema da Fundação. Há um bicicletário descoberto em seu entorno.", "endereço": "R. Henrique Dias, 609", "link": "https://maps.app.goo.gl/jKcCgRfcA8atYQJT9"}
+            { "nome": "Museu do Homem do Nordeste/Fundaj", "descricao": "É onde fica a sala Museu do Cinema da Fundação. Há um bicicletário coberto.", "endereço": "Av. Dezessete de Agosto, 2187", "link": "https://maps.app.goo.gl/iTnTrJHD5FhV4ryg8"}
         ]
     },
     {
