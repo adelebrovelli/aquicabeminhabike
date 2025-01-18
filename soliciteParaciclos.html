@@ -108,6 +108,7 @@
         }
 
         .soliciteParaciclos-img {
+            margin-left: 2vw;
             width: 13.281vw;
             height: 8.125vw;
         }
@@ -126,6 +127,7 @@
 
 
         footer {
+            font-size: 1.5vw;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -164,6 +166,95 @@
             width:40vw;
         }
 
+        .cttu-button {
+            padding: 1vw 2vw;
+               width: 14vw;
+               height: 5.677vw;
+               border-radius: 1vw;
+               font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
+               font-weight: 450;
+               line-height: 1.7vw;
+               font-size: 1.35vw;
+               text-align: center;
+               cursor: pointer;
+               text-decoration: none;
+               border: none;
+               display: flex;
+               align-items: center; 
+               justify-content: center; 
+               text-align: center;
+                margin-top: 4vw;
+                background-color: #FECA8A;
+                color: #F98392;
+        }
+
+        @media (max-width: 768px) {
+        body {
+            margin-top: 10vw;
+        }
+        .logo-index {
+            max-width: 12vw;
+            margin-left: 5vw;
+            margin-bottom: 3vw;
+        }
+        .texto-index {
+            max-width: 36vw;
+            margin-right: 5vw;
+        }
+        .nav-ciclo {
+            max-width: auto;
+            margin-top: 20px;
+        }
+        .buttons {
+            flex-direction: column;
+            gap: 2vw;
+            bottom: 2vw;
+            right: 5vw;
+            margin-bottom: 7vw; 
+        }
+        .button{
+            border-radius: 13px;
+            width: 20vw;
+            height: 9vw;
+            font-size: 2.15vw;
+            line-height: 2.3vw; 
+        }
+
+        .container {
+            --size: 3vw;
+            width: 4vw;
+            height: 4vw;
+        }
+        footer {
+            padding: 15vw;
+            flex-direction: column;
+            align-items: center;
+            font-size: 3vw;
+            
+        }
+
+        .soliciteParaciclos-text {
+                width: 90vw;
+                font-size: 3vw;
+                padding: 2vw;
+            }
+            .soliciteParaciclos-img {
+                width: 25vw;
+                height: auto;
+            }
+            .soliciteParaciclos-textbox {
+                gap: 2vw;
+            }
+
+            .cttu-button {
+            border-radius: 2vw;
+            width: 25vw;
+            height: 11vw;
+            font-size: 2.66vw;
+            line-height: 4vw;
+        }
+        }
+
     </style>
     </head>
     <body>
@@ -185,9 +276,9 @@
             <article class="mapaParaciclos-textbox">
                 <img src="megafone.svg" class="soliciteParaciclos-img" alt="paraciclo laranja"/>
                 <section class="soliciteParaciclos-text">
-                <p>é possível solicitar um paraciclo ao CTTU preenchendo o formulário disponível no botão abaixo.
+                <p>é possível solicitar um paraciclo a CTTU preenchendo o formulário disponível no botão abaixo.
                 </p>
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLServMHZjS5L1d0sGelwAdsMQSuQqRNduI0lJd8b6vZmY-itUA/viewform?pli=1" class="button button-laranja" style="border-radius: 1vw; margin-top: 4vw; padding: 0.5vw 1vw;" target="_blank" rel="noopener noreferrer">acesse o formulário</a>
+                   <a href="https://docs.google.com/forms/d/e/1FAIpQLServMHZjS5L1d0sGelwAdsMQSuQqRNduI0lJd8b6vZmY-itUA/viewform?pli=1" class="cttu-button" target="_blank" rel="noopener noreferrer">acesse o formulário</a>
                 </section>
             </article>
         <footer>
