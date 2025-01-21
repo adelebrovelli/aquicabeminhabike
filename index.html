@@ -256,36 +256,67 @@ loadGrid();
         footer a:hover{
             color:#FECA8A
         }
+
+        .nav-ciclo-mobile {
+            display:none
+        }
+        .paracicloMobile{
+            display:none;
+        }
+        
         @media (max-width: 768px) {
         body {
+            margin-right: 0%;
             margin-top: 10vw;
         }
-        .logo-index {
-            max-width: 12vw;
-            margin-left: 5vw;
-            margin-bottom: 3vw;
+
+        .nav-ciclo-mobile{
+            margin: 0;
+            display: block;
+        }
+        .ciclofaixaMobile {
+            margin-bottom: 2.1vw;
+            height: auto;
+        }
+        .logo-index { 
+            margin-left: -40%;
+            max-width: 36vw;
+            margin-bottom: 12vw;
         }
         .texto-index {
-            max-width: 36vw;
-            margin-right: 5vw;
+            max-width: 72vw;
+        }
+        .titulos {
+            margin-top: 40vw;
+            margin-bottom: 20vw;
+            flex-direction: column;
+            align-items: center;
+        }
+        .paracicloMobile{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 20vw;
+            width: 12vw;
+            height: auto;
         }
         .nav-ciclo {
-            max-width: auto;
-            margin-top: 20px;
+            display:none;
+
         }
         .buttons {
-            flex-direction: column;
+            flex-direction: row;
+            position:relative;
             gap: 2vw;
-            bottom: 2vw;
-            right: 5vw;
+            left: 16vw;
             margin-bottom: 7vw; 
         }
         .button {
-            border-radius: 13px;
-            width: 20vw;
-            height: 9vw;
-            font-size: 2.15vw;
-            line-height: 2.3vw; 
+            border-radius: 0px 0px 1vw 1vw;
+            width: 30vw;
+            height: 13vw;
+            font-size: 3.5vw;
+            line-height: 4.8vw; 
         }
         .locations-grid {
             flex-direction: column;
@@ -297,7 +328,7 @@ loadGrid();
             gap: 2vw;
         }
         .locations-item1 {
-            font-size: 3vw;
+            font-size: 4.5vw;
             padding: 2vw;
         }
         .locations-item {
@@ -305,24 +336,26 @@ loadGrid();
             padding: 3vw;
         }
         .item-title {
-            font-size: 3vw;
+            font-size: 3.85vw;
         }
         .item-details {
-            font-size: 2.5vw;
+            font-size: 4.3vw;
         }
         .container {
-            --size: 3vw;
+            --size: 3.5vw;
             width: 4vw;
             height: 4vw;
         }
         footer {
+            text-align: center;
+            justify-content: center; 
             padding: 15vw;
             flex-direction: column;
             align-items: center;
-            font-size: 3vw;
+            font-size: 3.8vw;
         }
         }
-
+        
         a {
         color: inherit; 
         text-decoration: none; 
@@ -348,15 +381,23 @@ loadGrid();
             <a href="index.html">
             <img src="LOGO-index.svg" class="logo-index" style="width: 100%;" alt="logo aqui cabe minha bike"/>
             </a>
+            <img src="paracicloMobile.svg" class="paracicloMobile" alt="vetor de paraciclo"/>
             <a href="index.html"> <img src="guia-texto.svg" class="texto-index" style="width: 100%;" alt="guia de estabelecimentos com bicicletários em Recife"/></a>
             </div>
             <nav class="nav-ciclo">
                 <img src="NAV-ciclofaixa.svg" alt="ciclofaixa e navbar"/>
-                <div class="buttons">
+                <div class="buttons" id="web-buttons">
                     <a href="mapaParaciclos.html" class="button button-laranja">mapa de <br> paraciclos</a>
                     <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
                 </div>
             </nav>
+            <nav class="nav-ciclo-mobile">
+            <img class="ciclofaixaMobile" src="ciclofaixaMobile.svg" alt="ciclofaixa"/>
+            <div class="buttons" id="mobile-buttons">
+                <a href="mapaParaciclos.html" class="button button-laranja">mapa de <br> paraciclos</a>
+                <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
+            </div>
+        </nav>
         </header>
         <div class="locations-grid" id="grid">
             <article class="locations-column" id="zonasul">
