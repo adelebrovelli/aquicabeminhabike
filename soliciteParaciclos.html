@@ -9,6 +9,7 @@
            @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Funnel+Display:wght@300..800&display=swap');
            * {
             box-sizing: border-box;
+            font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
         }
         
          body {
@@ -58,7 +59,6 @@
                width: 12.344vw;
                height: 5.677vw;
                border-radius: 1vw 1vw 0px 0px;
-               font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
                font-weight: 450;
                line-height: 1.7vw;
                font-size: 1.35vw;
@@ -79,9 +79,6 @@
                background-color: #F98392;
                color: #FECA8A;
            }
-           .button-rosa:hover {
-               background-color: #F7748B;     
-           }
            .button-laranja:hover {
             background-color: #FCD09F;
            }
@@ -94,7 +91,6 @@
             align-items: center;
             flex-direction: column;
             gap: 4vw;
-            font-family: "Funnel Display", "Afacad", Arial, Helvetica, sans-serif;
             font-size: 1.5vw;
             color: #F7748B
         }
@@ -108,7 +104,7 @@
         }
 
         .soliciteParaciclos-img {
-            margin-left: 2vw;
+            margin-left: 3vw;
             width: 13.281vw;
             height: 8.125vw;
         }
@@ -134,7 +130,6 @@
             margin-top:3vw;
             height: 15vh;
             width: 100%;
-            font-family: "Afacad", sans-serif;
             color: #F9ECD9;
             background-color: #F98392;
         }
@@ -171,7 +166,6 @@
                width: 14vw;
                height: 5.677vw;
                border-radius: 1vw;
-               font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
                font-weight: 450;
                line-height: 1.7vw;
                font-size: 1.35vw;
@@ -188,36 +182,66 @@
                 color: #F98392;
         }
 
+        .nav-ciclo-mobile {
+            display:none
+        }
+        .paracicloMobile{
+            display:none;
+        }
+
         @media (max-width: 768px) {
-        body {
+            body {
+            overflow-x: hidden;
+            margin: 0;
             margin-top: 10vw;
         }
-        .logo-index {
-            max-width: 12vw;
-            margin-left: 5vw;
-            margin-bottom: 3vw;
+
+        .nav-ciclo-mobile{
+            margin: 0;
+            display: block;
+        }
+        .ciclofaixaMobile {
+            margin-bottom: 2.5vw;
+            height: auto;
+        }
+        .logo-index { 
+            margin-left: -40%;
+            max-width: 36vw;
+            margin-bottom: 12vw;
         }
         .texto-index {
-            max-width: 36vw;
-            margin-right: 5vw;
+            max-width: 72vw;
+        }
+        .titulos {
+            margin-top: 40vw;
+            margin-bottom: 20vw;
+            flex-direction: column;
+            align-items: center;
+        }
+        .paracicloMobile{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 20vw;
+            width: 12vw;
+            height: auto;
         }
         .nav-ciclo {
-            max-width: auto;
-            margin-top: 20px;
+            display: none;
         }
         .buttons {
-            flex-direction: column;
+            flex-direction: row;
+            position:relative;
             gap: 2vw;
-            bottom: 2vw;
-            right: 5vw;
+            left: 16vw;
             margin-bottom: 7vw; 
         }
-        .button{
-            border-radius: 13px;
-            width: 20vw;
-            height: 9vw;
-            font-size: 2.15vw;
-            line-height: 2.3vw; 
+        .button {
+            border-radius: 0px 0px 1vw 1vw;
+            width: 30vw;
+            height: 13vw;
+            font-size: 3.5vw;
+            line-height: 4.8vw; 
         }
 
         .container {
@@ -231,28 +255,32 @@
             padding: 15vw;
             flex-direction: column;
             align-items: center;
-            font-size: 3vw;
+            font-size: 3.8vw;
         }
 
         .soliciteParaciclos-text {
-                width: 90vw;
-                font-size: 3vw;
+                width: 70vw;
+                font-size: 4vw;
                 padding: 2vw;
+                margin-top: 10vw;
             }
             .soliciteParaciclos-img {
-                width: 25vw;
+                width: 35vw;
                 height: auto;
             }
             .soliciteParaciclos-textbox {
+                margin: 25vw;
                 gap: 2vw;
             }
 
             .cttu-button {
+            padding: 2.2vw;
             border-radius: 2vw;
-            width: 25vw;
-            height: 11vw;
-            font-size: 2.66vw;
-            line-height: 4vw;
+            width: 30vw;
+            height: auto;
+            font-size: 3.8vw;
+            line-height: 5vw;
+            margin-top: 10vw;
         }
         }
 
@@ -264,6 +292,7 @@
                 <a href="index.html">
                 <img src="LOGO-index.svg" class="logo-index" style="width: 100%;" alt="logo aqui cabe minha bike"/>
                 </a>
+                <img src="paracicloMobile.svg" class="paracicloMobile" alt="vetor de paraciclo"/>
                 <a href="index.html"> <img src="guia-texto.svg" class="texto-index" style="width: 100%;" alt="guia de estabelecimentos com bicicletários em Recife"/></a>
                 </div>
             <nav class="nav-ciclo">
@@ -273,8 +302,15 @@
                     <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
                 </div>
             </nav>
+            <nav class="nav-ciclo-mobile">
+                <img class="ciclofaixaMobile" src="ciclofaixaMobile.svg" alt="ciclofaixa"/>
+                <div class="buttons" id="mobile-buttons">
+                    <a href="mapaParaciclos.html" class="button button-laranja">mapa de <br> paraciclos</a>
+                    <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
+                </div>
+            </nav>
         </header>
-            <article class="mapaParaciclos-textbox">
+            <article class="soliciteParaciclos-textbox">
                 <img src="megafone.svg" class="soliciteParaciclos-img" alt="paraciclo laranja"/>
                 <section class="soliciteParaciclos-text">
                 <p>é possível solicitar um paraciclo a CTTU preenchendo o formulário disponível no botão abaixo.

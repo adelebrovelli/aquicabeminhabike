@@ -9,6 +9,7 @@
            @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Funnel+Display:wght@300..800&display=swap');
            * {
             box-sizing: border-box;
+            font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
         }
         
          body {
@@ -58,7 +59,6 @@
                width: 12.344vw;
                height: 5.677vw;
                border-radius: 1vw 1vw 0px 0px;
-               font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
                font-weight: 450;
                line-height: 1.7vw;
                font-size: 1.35vw;
@@ -72,18 +72,15 @@
                text-align: center;
            }
            .button-laranja {
-               background-color: #FECA8A;
+               background-color: #FCD09F;
                color: #F98392;
            }
            .button-rosa {
-               background-color: #F98392;
+               background-color:  #F7748B;
                color: #FECA8A;
            }
            .button-rosa:hover {
-               background-color: #F7748B;     
-           }
-           .button-laranja:hover {
-            background-color: #FCD09F;
+               background-color: #F98392 ;     
            }
 
         article {
@@ -94,7 +91,6 @@
             align-items: center;
             flex-direction: column;
             gap: 4vw;
-            font-family: "Funnel Display", "Afacad", Arial, Helvetica, sans-serif;
             font-size: 1.5vw;
             color: #F7748B
         }
@@ -133,7 +129,6 @@
             margin-top:3vw;
             height: 15vh;
             width: 100%;
-            font-family: "Afacad", sans-serif;
             color: #F9ECD9;
             background-color: #F98392;
         }
@@ -171,7 +166,6 @@
                width: 14vw;
                height: 5.677vw;
                border-radius: 1vw;
-               font-family:"Funnel Display", "Afacad", Arial, Helvetica,  sans-serif;
                font-weight: 450;
                line-height: 1.7vw;
                font-size: 1.35vw;
@@ -188,38 +182,69 @@
                 color: #F98392;
         }
 
-        @media (max-width: 768px) {
-        body {
-            margin-top: 10vw;
+        .nav-ciclo-mobile {
+            display:none
         }
-        .logo-index {
-            max-width: 12vw;
-            margin-left: 5vw;
-            margin-bottom: 3vw;
-        }
-        .texto-index {
-            max-width: 36vw;
-            margin-right: 5vw;
-        }
-        .nav-ciclo {
-            max-width: auto;
-            margin-top: 20px;
-        }
-        .buttons {
-            flex-direction: column;
-            gap: 2vw;
-            bottom: 2vw;
-            right: 5vw;
-            margin-bottom: 7vw; 
-        }
-        .button{
-            border-radius: 13px;
-            width: 20vw;
-            height: 9vw;
-            font-size: 2.15vw;
-            line-height: 2.3vw; 
+        .paracicloMobile{
+            display:none;
         }
 
+        @media (max-width: 768px) {
+            body {
+            overflow-x: hidden;
+            margin: 0;
+            margin-top: 10vw;
+        }
+
+        .nav-ciclo-mobile{
+            margin: 0;
+            display: block;
+        }
+        .ciclofaixaMobile {
+            margin-bottom: 2.5vw;
+            height: auto;
+        }
+        .logo-index { 
+            margin-left: -40%;
+            max-width: 36vw;
+            margin-bottom: 12vw;
+        }
+        .texto-index {
+            max-width: 72vw;
+        }
+        .titulos {
+            margin-top: 40vw;
+            margin-bottom: 20vw;
+            flex-direction: column;
+            align-items: center;
+        }
+        .paracicloMobile{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 20vw;
+            width: 12vw;
+            height: auto;
+        }
+        .nav-ciclo {
+            display:none;
+
+        }
+        .buttons {
+            flex-direction: row;
+            position:relative;
+            gap: 2vw;
+            left: 16vw;
+            margin-bottom: 7vw; 
+        }
+        .button {
+            border-radius: 0px 0px 1vw 1vw;
+            width: 30vw;
+            height: 13vw;
+            font-size: 3.5vw;
+            line-height: 4.8vw; 
+        }
+        
         .container {
             --size: 3vw;
             width: 4vw;
@@ -231,28 +256,32 @@
             padding: 15vw;
             flex-direction: column;
             align-items: center;
-            font-size: 3vw;
+            font-size: 3.8vw;
         }
 
         .mapaParaciclos-text {
-                width: 90vw;
-                font-size: 3vw;
+                width: 70vw;
+                font-size: 4vw;
                 padding: 2vw;
+                margin-top: 10vw;;
             }
             .mapaParaciclos-img {
-                width: 40vw;
+                width: 60vw;
                 height: auto;
             }
             .mapaParaciclos-textbox {
+                margin: 30vw;
                 gap: 2vw;
             }
 
             .cttu-button {
+            padding: 2.2vw;
             border-radius: 2vw;
-            width: 25vw;
-            height: 11vw;
-            font-size: 2.66vw;
+            width: 30vw;
+            height: auto;
+            font-size: 3.2vw;
             line-height: 4vw;
+            margin-top: 10vw;
         }
         }
         
@@ -260,20 +289,28 @@
     </style>
     </head>
     <body>
-        <header>
+        <header>   
             <div class="titulos"> 
-                <a href="index.html">
-                <img src="LOGO-index.svg" class="logo-index" style="width: 100%;" alt="logo aqui cabe minha bike"/>
-                </a>
-                <a href="index.html"> <img src="guia-texto.svg" class="texto-index" style="width: 100%;" alt="guia de estabelecimentos com bicicletários em Recife"/></a>
-                </div>
+            <a href="index.html">
+            <img src="LOGO-index.svg" class="logo-index" style="width: 100%;" alt="logo aqui cabe minha bike"/>
+            </a>
+            <img src="paracicloMobile.svg" class="paracicloMobile" alt="vetor de paraciclo"/>
+            <a href="index.html"> <img src="guia-texto.svg" class="texto-index" style="width: 100%;" alt="guia de estabelecimentos com bicicletários em Recife"/></a>
+            </div>
             <nav class="nav-ciclo">
                 <img src="NAV-ciclofaixa.svg" alt="ciclofaixa e navbar"/>
-                <div class="buttons">
+                <div class="buttons" id="web-buttons">
                     <a href="mapaParaciclos.html" class="button button-laranja">mapa de <br> paraciclos</a>
                     <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
                 </div>
             </nav>
+            <nav class="nav-ciclo-mobile">
+            <img class="ciclofaixaMobile" src="ciclofaixaMobile.svg" alt="ciclofaixa"/>
+            <div class="buttons" id="mobile-buttons">
+                <a href="mapaParaciclos.html" class="button button-laranja">mapa de <br> paraciclos</a>
+                <a href="soliciteParaciclos.html" class="button button-rosa">solicite um <br> paraciclo</a>
+            </div>
+        </nav>
         </header>
             <article class="mapaParaciclos-textbox">
                 <img src="paraciclo.svg" class="mapaParaciclos-img" alt="paraciclo laranja"/>
