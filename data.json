@@ -3,7 +3,9 @@
         "regiao": "zona sul",
         "lugares": [
             { "nome": "Shopping Recife", "descricao": "Próximo a entrada principal, o bicicletário é coberto e encontra-se na área F do estacionamento.", "endereço": "Rua Padre Carapuceiro, 777", "link": "https://maps.app.goo.gl/18aU4eoGBLwzAEbh8" },
-            { "nome": "Além do Pão - Setúbal", "descricao": "Logo na entrada, eles possuem um bicicletário descoberto.", "endereço": "R. Prof. Augusto Lins e Silva, 211", "link": "https://maps.app.goo.gl/YjbGj2zHER3MuD5M6" }
+            { "nome": "Além do Pão - Setúbal", "descricao": "Logo na entrada, eles possuem um bicicletário descoberto.", "endereço": "R. Prof. Augusto Lins e Silva, 211", "link": "https://maps.app.goo.gl/YjbGj2zHER3MuD5M6" },
+            { "nome": "Atacado dos Presentes - Imbiribeira", "descricao": "O bicicletário é coberto fica no estacionamento, perto dos passarinhos", "endereço": "Av. Mal. Mascarenhas de Morais, 4075", "link": "https://maps.app.goo.gl/Cp1qfnp3E1ixEPPZ7"},
+            { "nome": "Atacado da Construção - Pina", "descricao": "O bicicletário é descoberto em U invertido e se vê logo na entrada.", "endereço": "Avenida Herculano Bandeira, 1001", "link": "https://maps.app.goo.gl/8QKyNXTB7VxTvBC18"}
         ]
     },
     {
@@ -11,6 +13,7 @@
         "lugares": [
             { "nome": "UNICAP", "descricao": "Bicicletário grande descoberto próximo ao bloco D.", "endereço": "Rua do Príncipe, 526", "link": "https://maps.app.goo.gl/d81m5nWksYfBZwtL6"},
             { "nome": "Casa Buliçosa", "descricao": "Na frente possui um bicicletário descoberto.", "endereço": "Rua Capitão Lima, 269", "link": "https://maps.app.goo.gl/9PUn6A9QeWQMnBwSA"},
+            { "nome": "Vapor Cozinha Afetiva", "descricao": "Bicicletário descoberto em U ao lado direito da entrada. São 5 postos bem largos.", "endereço": "Rua Capitão Lima, 210", "link": "https://maps.app.goo.gl/cSJa5uxRPTCVrcbn9"},
             { "nome": "Fundação Joaquim Nabuco - Derby", "descricao": "É onde fica a sala Derby do Cinema da Fundação. Há um bicicletário descoberto em seu entorno.", "endereço": "R. Henrique Dias, 609", "link": "https://maps.app.goo.gl/jKcCgRfcA8atYQJT9"}
         ]
     },
@@ -19,7 +22,9 @@
         "lugares": [
             { "nome": "Shopping Plaza", "descricao": "Bicicletário coberto com 60 vagas para bike no edifício garagem, piso E1.", "endereço": "Rua Dr. João Santos Filho, 255", "link": "https://maps.app.goo.gl/r8Xby7AFvP8BMcWK6" },
             { "nome": "Shopping ETC", "descricao": "Possui bicicletário coberto dentro do estacionamento.", "endereço": "Av. Rosa e Silva, 1460", "link": "https://maps.app.goo.gl/PFkiCFxNArJcxF4a9" },
-            { "nome": "Museu do Homem do Nordeste/Fundaj", "descricao": "É onde fica a sala Museu do Cinema da Fundação. Há um bicicletário coberto.", "endereço": "Av. Dezessete de Agosto, 2187", "link": "https://maps.app.goo.gl/iTnTrJHD5FhV4ryg8"}
+            { "nome": "Museu do Homem do Nordeste/Fundaj", "descricao": "É onde fica a sala Museu do Cinema da Fundação. Há um bicicletário coberto.", "endereço": "Av. Dezessete de Agosto, 2187", "link": "https://maps.app.goo.gl/iTnTrJHD5FhV4ryg8"},
+            { "nome": "Atacado dos Presentes - Torre", "descricao": "O bicicletário coberto fica no estacionamento.", "endereço": "Rua José Bonifácio, 961", "link": "https://maps.app.goo.gl/2YyLsUVb7PvR1CZZ8"},
+            { "nome": "Esquina Gelateria Café", "descricao": "O bicicletário, na verdade, é na entrada do colégio capibaribe, localizado quase em frente à gelateria. São 4 postos para estacionar em bicicletário estilo U invertido.", "endereço": "Rua das Graças, 10", "link": "https://maps.app.goo.gl/8JFJ4zL1z4KPCDxU8"} 
         ]
     },
     {
